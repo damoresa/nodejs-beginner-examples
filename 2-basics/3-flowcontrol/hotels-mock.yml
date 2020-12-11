@@ -1,0 +1,96 @@
+endpoints:
+  - data:
+      - code: 1
+        name: Luxury hotel
+        description: Luxurious hotel
+        location: Madrid, Spain
+        rating: 4
+        reviews: 894
+      - code: 2
+        name: Average hotel
+        description: Average hotel
+        location: Madrid, Spain
+        rating: 2
+        reviews: 1432
+      - code: 3
+        name: Modest hotel
+        description: Average hotel
+        location: Madrid, Spain
+        rating: 1
+        reviews: 2712
+    method: get
+    uri: /hotels
+  - data:
+      - code: 1
+        description: A great 4-bed room with a huge balcony and a private jacuzzi
+        cancellation: PROMOTION! No cancellation fee.
+        beds: 4
+        bathrooms: 2
+        visitors: 4
+        price: 88
+        hotelId: 1
+      - code: 2
+        description: A great 2-bed room with a private jacuzzi
+        cancellation: PROMOTION! No cancellation fee.
+        beds: 2
+        bathrooms: 1
+        visitors: 2
+        price: 78
+        hotelId: 1
+    method: get
+    uri: /hotels/{hotelId}/rooms
+    path:
+      - param: hotelId
+        value: 1
+  - data:
+      - code: 3
+        description: A 4-bed room featuring amazing sights of the city center
+        cancellation: PROMOTION! No cancellation fee.
+        beds: 4
+        bathrooms: 1
+        visitors: 4
+        price: 58
+        hotelId: 2
+      - code: 4
+        description: A 2-bed room featuring amazing sights of the city center
+        cancellation: PROMOTION! No cancellation fee.
+        beds: 2
+        bathrooms: 1
+        visitors: 2
+        price: 48
+        hotelId: 2
+    method: get
+    uri: /hotels/{hotelId}/rooms
+    path:
+      - param: hotelId
+        value: 2
+  - data:
+      - code: 5
+        description: A modest 2-bed room
+        cancellation: PROMOTION! No cancellation fee.
+        beds: 2
+        bathrooms: 1
+        visitors: 2
+        price: 28
+        hotelId: 3
+    method: get
+    uri: /hotels/{hotelId}/rooms
+    path:
+      - param: hotelId
+        value: 3
+  - data:
+      - code: 5
+        description: A modest 2-bed room
+        cancellation: PROMOTION! No cancellation fee.
+        beds: 2
+        bathrooms: 1
+        visitors: 2
+        price: 28
+        hotelId: 3
+    method: get
+    uri: /hotels/{hotelId}/rooms/{roomId}
+    path:
+      - param: hotelId
+        value: 3
+      - param: roomId
+        value: 5

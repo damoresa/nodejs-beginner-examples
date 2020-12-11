@@ -1,0 +1,7 @@
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# NodeJS
+node_modules/

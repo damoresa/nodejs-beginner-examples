@@ -1,0 +1,14 @@
+{
+  "name": "flowcontrol-samples",
+  "version": "1.0.0",
+  "description": "NodeJS flow control mechanisms examples",
+  "main": "31-callbacks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Amores",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0"
+  }
+}
