@@ -47,11 +47,10 @@ const defaultHandler = (req, res) => {
 app.all('*', defaultHandler);
 
 // Configure exposed port and start listening
-app.listen(port, () => {
+const runtime = app.listen(port, () => {
     console.log(`Application listening on ${port}`);
-});
+})
 
-// Configure error handler
-app.on('error', (err) => {
+runtime.on('error', (err) => {
     console.error(`Application unable to start on port ${port}`, err);
 });
