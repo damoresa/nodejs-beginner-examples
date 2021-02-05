@@ -8,7 +8,6 @@ const fileDownload = (req, res) => {
     const filename = req.query['filename'];
 
     if (filename) {
-        const filename = req.query.filename;
         // Create a read stream on the file to download
         const filePath = path.join(__dirname, filename);
         const readStream = fs.createReadStream(filePath);

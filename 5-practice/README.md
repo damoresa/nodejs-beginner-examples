@@ -147,7 +147,7 @@ In order to add new interactions to the service, the following DTO is purposed:
 
 Date will be added as current date in _ISO format_ by the _express_ controller.
 
-###### Interactions service
+###### Notifications service
 
 This service stores no data and should only generate request responses after validating
 input data. It should expose the following endpoints:

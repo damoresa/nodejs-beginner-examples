@@ -1,2 +1,2 @@
 # Initially ignore *.js files to avoid leaking the solution!
-*.js
+# *.js
